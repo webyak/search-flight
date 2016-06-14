@@ -14,10 +14,7 @@ class SearchFlightContainer extends Component {
     dateOutbound: moment()
       .startOf('day')
       .toDate(),
-    dateInbound: moment()
-      .startOf('day')
-      .add(1, 'w')
-      .toDate(),
+    dateInbound: undefined,
     flightOutbound: null,
     flightInbound: null,
     visibleFlights: 'outbound',
